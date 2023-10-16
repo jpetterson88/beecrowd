@@ -1,0 +1,31 @@
+var input = require('fs').readFileSync('stdin', 'utf8');
+var lines = input.split('\n').map(item => parseFloat(item));
+
+var valor = lines.shift();
+valor *= 100;
+
+console.log("NOTAS:");
+console.log(`${Math.floor(valor / (100 * 100))} nota(s) de R$ 100.00`);
+valor %= (100 * 100);
+console.log(`${Math.floor(valor / (50 * 100))} nota(s) de R$ 50.00`);
+valor %= (50 * 100);
+console.log(`${Math.floor(valor / (20 * 100))} nota(s) de R$ 20.00`);
+valor %= (20 * 100);
+console.log(`${Math.floor(valor / (10 * 100))} nota(s) de R$ 10.00`);
+valor %= (10 * 100);
+console.log(`${Math.floor(valor / (5 * 100))} nota(s) de R$ 5.00`);
+valor %= (5 * 100);
+console.log(`${Math.floor(valor / (2 * 100))} nota(s) de R$ 2.00`);
+valor %= (2 * 100);
+console.log("MOEDAS:");
+console.log(`${Math.floor(valor / (1 * 100))} moeda(s) de R$ 1.00`);
+valor %= (1 * 100);
+console.log(`${Math.floor(valor / (0.5 * 100))} moeda(s) de R$ 0.50`);
+valor %= (0.5 * 100);
+console.log(`${Math.floor(valor / (0.25 * 100))} moeda(s) de R$ 0.25`);
+valor %= (0.25 * 100);
+console.log(`${Math.floor(valor / (0.1 * 100))} moeda(s) de R$ 0.10`);
+valor %= (0.1 * 100);
+console.log(`${Math.floor(valor / (0.05 * 100))} moeda(s) de R$ 0.05`);
+valor %= (0.05 * 100);
+console.log(`${Math.floor(valor / (0.01 * 100))} moeda(s) de R$ 0.01`);
