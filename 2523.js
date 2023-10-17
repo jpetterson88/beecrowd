@@ -11,7 +11,6 @@ while(lines.length > 1) {
     totLampadas = lines.shift();
     lamPiscadas = lines.shift().split(" ");
     texto = "";
-
     for(i = 0; i < totLampadas; i++) {
         for(j = 0; j < letras.length; j++) {
             if(lamPiscadas[i] == j + 1) {
