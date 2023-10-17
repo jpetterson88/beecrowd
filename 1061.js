@@ -58,4 +58,3 @@ console.log(`${totDias} dia(s)`);
 console.log(`${totHora} hora(s)`); 
 console.log(`${totMinuto} minuto(s)`);
 console.log(`${totSegundo} segundo(s)`);
-
