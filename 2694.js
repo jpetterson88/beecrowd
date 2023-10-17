@@ -7,7 +7,6 @@ var soma;
 
 for(i = 0; i < n; i++) {
     caracteres = lines[i];
-    
     ehNumero = 0;
     ehLetra = 0;
     soma = 0;
