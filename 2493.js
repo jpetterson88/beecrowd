@@ -10,23 +10,18 @@ while(lines.length > 1) {
     totJog = Number(lines.shift());
     expressoes = [];
     eliminados = [];
-    
     for(let i = 0; i < totJog; i++) {
         expressoes[i] = lines.shift();
         expressoes[i] = extrairDados(expressoes[i]);
     }
-    
     for(let j = 0; j < totJog; j++) {
         let [nome, posicao, operador] = lines.shift().split(" ");
-        
         n1 = expressoes[posicao - 1][0];
         n2 = expressoes[posicao - 1][1];
         n3 = expressoes[posicao - 1][2];
-        
         soma = Number(n1) + Number(n2);
         sub = n1 - n2;
         mul = n1 * n2;
-        
         if(soma == n3) resposta = true;
         if(sub == n3) resposta = true;
         if(mul == n3) resposta = true;
@@ -41,7 +36,6 @@ while(lines.length > 1) {
         }
         resposta = false;
     }
-    
     if(eliminados.length == 0) {
         console.log("You Shall All Pass!");
     } else if(eliminados.length == totJog) {
