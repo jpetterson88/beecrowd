@@ -1,23 +1,10 @@
 var input = require('fs').readFileSync('stdin', 'utf8');
-var lines = input.split('\n').map(item => parseInt(item));
+var lines = input.split('\n');
 
-var x = lines.shift();
-var y = lines.shift();
-var totImpar = 0;
+var x = parseInt(lines.shift());
 
-if(x < y) {
-    for(var i = x + 1; i < y; i++) {
-        if(i % 2 !== 0) {
-            totImpar += i;
-        }
-    }
-} else {
-    for(var i = x - 1; i > y; i--) {
-        if(i % 2 !== 0) {
-            totImpar += i;
-        }
+for(var i = x; i < (x + 12); i++) {
+    if(i % 2 !== 0) {
+        console.log(i);
     }
 }
-
-console.log(totImpar);
-
