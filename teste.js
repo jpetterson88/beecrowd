@@ -1,11 +1,8 @@
 var input = require('fs').readFileSync('stdin', 'utf8');
 var lines = input.split('\r\n');
 
-const regex = /[0-9]+/g
-string = 'a';
+let x = 10;
+let y = 20;
 
-if(regex.test(string)) {
-    console.log('sim');
-} else {
-    console.log('nao');
-}
+console.log(Math.min(x, y));
+console.log(Math.max(x, y));
