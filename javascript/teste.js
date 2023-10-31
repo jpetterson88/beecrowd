@@ -1,8 +1,6 @@
 var input = require('fs').readFileSync('stdin', 'utf8');
 var lines = input.split('\r\n');
 
-let x = 10;
-let y = 20;
+let matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
-console.log(Math.min(x, y));
-console.log(Math.max(x, y));
+console.log(matrix.length);
