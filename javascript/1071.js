@@ -20,4 +20,3 @@ if(x < y) {
 }
 
 console.log(totImpar);
-
