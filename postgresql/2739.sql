@@ -1,0 +1,1 @@
+SELECT name, EXTRACT(DAY FROM payday)::integer FROM loan;
