@@ -1,13 +1,10 @@
 var input = require('fs').readFileSync('stdin', 'utf8');
 var lines = input.split('\n');
 
-var vetor = lines[0].split(" ").map(item => Number(item));
+let [n1, n2, n3] = lines.shift().split(" ").map(Number);
 
-var n1 = vetor.shift();
-var n2 = vetor.shift();
-var n3 = vetor.shift();
-var perimetro;
-var area;
+let perimetro;
+let area;
 
 if(((n1 + n2) > n3) && ((n1 + n3) > n2) && ((n2 + n3) > n1)) {
     perimetro = n1 + n2 + n3;
