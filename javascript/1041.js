@@ -1,9 +1,7 @@
 var input = require('fs').readFileSync('stdin', 'utf8');
 var lines = input.split('\n');
 
-var linha = lines[0].split(" ").map(item => Number(item));
-var x = linha.shift();
-var y = linha.shift();
+let [x, y] = lines.shift().split(" ").map(Number);
 
 if(x === 0 && y === 0) {
     console.log("Origem");
