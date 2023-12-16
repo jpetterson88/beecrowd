@@ -8,6 +8,6 @@ for(i = 0; i < lines.length; i++) {
         console.log("Acesso Permitido");
         break;
     } else {
-        console.log("Senha invalida");
+        console.log("Senha Invalida");
     }
 }
